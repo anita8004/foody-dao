@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Form from 'react-bootstrap/Form'
 import InputGroup from 'react-bootstrap/InputGroup'
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 
 const Header = () => {
   return (
@@ -21,7 +22,7 @@ const Header = () => {
             />
           </InputGroup>
         </Row>
-        <div>Connect Wallet</div>
+        <ConnectButton/>
       </Container>
     </Navbar>
   )
