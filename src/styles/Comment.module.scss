@@ -1,0 +1,23 @@
+$commentImgW: 80px;
+
+.commentCard {
+  @apply flex justify-between p-2 border border-gray-800 rounded-lg;
+}
+
+.commentCardImage {
+  width: $commentImgW;
+  height: $commentImgW;
+}
+
+.commentCardText {
+  width: calc(100% - $commentImgW);
+  @apply pl-4;
+}
+
+.commentCardTitle {
+  @apply text-lg mb-1 leading-none;
+}
+
+.commentCardDescription {
+  @apply text-sm leading-none mb-0;
+}
