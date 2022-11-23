@@ -45,7 +45,8 @@ function MyApp({ Component, pageProps }: AppProps) {
             <title>FOODY DAO</title>
             <meta name="description" content="FOODY DAO" />
             <link rel="icon" href="/favicon.ico" />
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+            {/* <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link> */}
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
           </Head>
 
           <Header/>

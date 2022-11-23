@@ -13,7 +13,7 @@ const Header = () => {
         <Row className='justify-content-center'>
           <InputGroup>
             <InputGroup.Text>
-            <span className="material-icons">search</span>
+            <span className="material-symbols-outlined">search</span>
             </InputGroup.Text>
             <Form.Control
               placeholder='Search'

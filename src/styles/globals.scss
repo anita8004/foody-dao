@@ -32,9 +32,11 @@
 }
 
 .main {
-  @apply flex-1 relative flex justify-center items-center;
+  @apply flex-1 relative flex justify-center items-center overflow-hidden;
 }
 
 .main-page {
-  @apply w-full h-full p-6;
+  @apply w-full h-full;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
