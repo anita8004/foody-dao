@@ -26,3 +26,15 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+.wrapper {
+  @apply flex flex-col w-screen h-screen;
+}
+
+.main {
+  @apply flex-1 relative flex justify-center items-center;
+}
+
+.main-page {
+  @apply w-full h-full p-6;
+}

@@ -1,4 +1,4 @@
-import '../styles/globals.scss';
+import '@/styles/globals.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import type { AppProps } from 'next/app';
 import '@rainbow-me/rainbowkit/styles.css';
@@ -14,6 +14,8 @@ import {
 } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
+import Head from 'next/head';
+import Header from '@/components/header';
 
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
@@ -38,7 +40,24 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
-        <Component {...pageProps} />
+        <div className="wrapper">
+          <Head>
+            <title>FOODY DAO</title>
+            <meta name="description" content="FOODY DAO" />
+            <link rel="icon" href="/favicon.ico" />
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+          </Head>
+
+          <Header/>
+
+          <main className="main">
+            <Component {...pageProps} />
+          </main>
+
+          <footer className="footer">
+            
+          </footer>
+        </div>
       </RainbowKitProvider>
     </WagmiConfig>
   )
