@@ -1,7 +1,7 @@
 $commentImgW: 80px;
 
 .commentCard {
-  @apply flex justify-between p-2 border border-gray-800 rounded-lg;
+  @apply flex justify-between p-2 border border-gray-800 rounded-lg cursor-pointer;
 }
 
 .commentCardImage {

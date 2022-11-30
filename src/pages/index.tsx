@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import styles from '@/styles/Home.module.scss'
-import Comment from '@/components/comment'
+import RestaurantComment from '@/components/restaurantComment'
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
           <button>Explore Restaurant by Map</button>
         </div>
         <div className={styles.homeContentList}>
-          <Comment/>
+          <RestaurantComment/>
         </div>
       </div>
       <div className={styles.bgMap}>

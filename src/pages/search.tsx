@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Comment from '@/components/comment'
+import RestaurantComment from '@/components/restaurantComment'
 import styles from '@/styles/Search.module.scss'
 
 const Search: NextPage = () => {
@@ -7,7 +7,7 @@ const Search: NextPage = () => {
   return (
     <div className='main-page'>
       <div className={styles.searchList}>
-        {array.map(item => (<Comment key={item}/>))}
+        {array.map(item => (<RestaurantComment key={item}/>))}
       </div>
     </div>
   );

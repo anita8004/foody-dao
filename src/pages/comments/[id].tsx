@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
 import styles from '@/styles/CommentsById.module.scss'
 import Comment from '@/components/comment'
-import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button'
+import { useRouter } from 'next/router'
 
 const CommentsByID: NextPage = () => {
   const array = Array.from({length: 5});
+  const router = useRouter();
   return (
     <div className='main-page'>
       <div className={styles.commentContent}>
@@ -30,7 +32,10 @@ const CommentsByID: NextPage = () => {
           </div>
           <div className={styles.commentsWrapper}>
             <div className={styles.commentsHeader}>
-              <Button variant="light">Write Comment</Button>{' '}
+            <Button 
+              variant="light"
+              onClick={() => router.push('/comments/add')}
+            >Write Comment</Button>{' '}
             </div>
             <div className={styles.comments}>
               {array.map(item => (<Comment key={item}/>))}
